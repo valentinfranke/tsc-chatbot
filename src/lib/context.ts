@@ -21,306 +21,68 @@
  * For data tables, use `csv` code sections, `json` code sections, or |Markdown tables|.
  */
 export const context = `
-Welcome to Friendly Conf!
+## IT Solution Market Size (USD Millions) in Germany.
+
+| IT Solution | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | 2027 |
+|---|---|---|---|---|---|---|---|---|---|
+| **Internet of Things** | | | | | | | | | |
+| IoT Software | 5,727.00 | 7,136.40 | 8,678.70 | 9,856.50 | 10,823.20 | 12,866.70 | 15,369.80 | 18,401.20 | 22,067.40 |
+| IoT Hardware | 4,714.70 | 5,708.30 | 6,825.50 | 7,644.60 | 8,924.90 | 10,405.80 | 12,189.20 | 14,309.00 | 16,824.50 |
+| IoT Services | 4,381.90 | 4,764.70 | 5,089.40 | 5,582.40 | 6,338.20 | 7,474.00 | 8,855.30 | 10,515.00 | 12,506.20 |
+| **Security** | | | | | | | | | |
+| Managed Security Services | 1,826.80 | 1,900.70 | 2,028.60 | 2,262.50 | 2,492.70 | 2,877.60 | 3,337.60 | 3,879.40 | 4,516.40 |
+| Identity & Access Management | 351.90 | 387.30 | 446.30 | 498.00 | 542.50 | 627.90 | 730.20 | 850.90 | 993.30 |
+| Security Intelligence and Management | 225.40 | 250.60 | 308.30 | 344.70 | 375.70 | 428.50 | 491.20 | 564.20 | 649.20 |
+| Endpoint Security Platforms | 231.80 | 271.80 | 337.90 | 369.90 | 412.70 | 454.30 | 502.60 | 557.20 | 618.80 |
+| Data Protection | 183.60 | 194.40 | 210.50 | 231.70 | 255.50 | 293.20 | 338.10 | 390.70 | 452.20 |
+| Unified Threat Management (UTM) Appliances | 161.00 | 169.80 | 200.10 | 221.00 | 255.10 | 289.30 | 329.60 | 376.30 | 430.40 |
+| Application Security | 120.00 | 118.90 | 144.90 | 174.00 | 204.70 | 239.40 | 281.50 | 331.60 | 391.30 |
+| Fraud Prevention and Transactional Security | 108.60 | 118.50 | 146.70 | 178.30 | 207.40 | 241.80 | 282.70 | 331.40 | 389.50 |
+| Network Security | 145.60 | 156.00 | 181.50 | 194.00 | 229.30 | 256.20 | 287.70 | 323.70 | 364.90 |
+| Multi-Factor Authentication (MFA) | 162.00 | 170.20 | 181.50 | 195.30 | 211.80 | 236.90 | 266.20 | 299.80 | 338.10 |
+| Messaging Security | 123.00 | 128.90 | 139.20 | 153.30 | 169.90 | 196.00 | 227.10 | 263.80 | 306.90 |
+| Application Delivery Controllers (ADCs) | 165.10 | 172.80 | 185.60 | 195.70 | 212.40 | 229.20 | 248.50 | 270.00 | 293.90 |
+| Web Security | 85.70 | 89.50 | 100.40 | 106.40 | 118.30 | 136.00 | 160.90 | 195.00 | 242.00 |
+| Intrusion Prevention Systems | 95.70 | 103.50 | 114.30 | 122.70 | 133.00 | 150.10 | 170.30 | 193.50 | 220.20 |
+| Server Security | 65.60 | 70.10 | 76.20 | 83.60 | 94.30 | 106.90 | 121.80 | 139.00 | 159.00 |
+| **Networking** | | | | | | | | | |
+| Managed Network Services | 2,115.60 | 2,280.20 | 2,512.00 | 2,699.70 | 2,919.20 | 3,224.90 | 3,579.80 | 3,982.80 | 4,438.50 |
+| Ethernet MAN/WAN Services | 1,447.00 | 1,512.90 | 1,630.60 | 1,727.90 | 1,830.70 | 2,029.80 | 2,261.10 | 2,524.10 | 2,822.20 |
+| Ethernet Switches | 1,357.00 | 1,412.60 | 1,506.70 | 1,558.90 | 1,692.80 | 1,830.70 | 1,989.30 | 2,166.40 | 2,363.30 |
+| IP/MPLS VPN | 1,292.10 | 1,359.10 | 1,447.10 | 1,476.00 | 1,516.80 | 1,563.10 | 1,616.70 | 1,678.80 | 1,744.50 |
+| xDSL (Digital Subscriber Line) | 2,398.30 | 2,510.90 | 2,607.10 | 2,270.70 | 2,093.70 | 1,955.20 | 1,784.60 | 1,578.60 | 1,348.00 |
+| Fiber Optic (FTTH/B) | 7.80 | 12.50 | 19.40 | 33.00 | 104.00 | 254.40 | 460.50 | 726.30 | 1,055.40 |
+| Content Delivery Network (CDN) Services | 257.30 | 297.10 | 342.50 | 400.90 | 466.60 | 542.30 | 629.70 | 729.80 | 843.50 |
+| SDN Controller platform | 222.40 | 246.70 | 289.80 | 328.90 | 369.70 | 435.50 | 515.50 | 611.50 | 726.60 |
+| Routers | 400.40 | 379.80 | 417.20 | 457.50 | 477.30 | 511.20 | 550.10 | 593.40 | 641.10 |
+| SD-WAN | 143.70 | 141.20 | 181.90 | 220.40 | 251.50 | 314.50 | 395.10 | 497.40 | 627.30 |
+| Ethernet Private Line Services | 443.80 | 461.60 | 477.60 | 478.70 | 483.30 | 489.40 | 497.40 | 507.60 | 518.30 |
+| Network Monitoring and Access Control | 158.00 | 194.00 | 222.90 | 254.00 | 286.00 | 322.90 | 366.00 | 416.60 | 474.30 |
+| Firewalls and VPN Appliances | 188.30 | 196.50 | 229.30 | 242.70 | 267.30 | 300.80 | 344.50 | 400.60 | 471.50 |
+| WLAN Devices | 267.90 | 281.10 | 303.40 | 318.00 | 342.00 | 368.60 | 398.70 | 433.00 | 470.70 |
+| Ethernet LAN Services | 236.80 | 240.50 | 250.00 | 255.30 | 262.50 | 272.50 | 284.30 | 297.30 | 311.40 |
+| Site-to-Site VPN | 191.70 | 202.80 | 209.70 | 209.00 | 208.60 | 208.60 | 209.50 | 211.10 | 213.00 |
+| Content-Filtering and Anti-Spam Appliances | 82.90 | 84.40 | 89.20 | 97.00 | 106.60 | 124.90 | 147.00 | 173.30 | 204.70 |
+| WAN Optimization Appliance | 77.20 | 77.90 | 81.30 | 83.00 | 87.10 | 91.90 | 97.40 | 103.50 | 110.20 |
+| **Other** | | | | | | | | | |
+| Cable internet | 20.90 | 22.60 | 24.20 | 21.80 | 20.90 | 21.00 | 21.10 | 21.20 | 21.30 |
+| Other Communication Services | 13.90 | 13.90 | 13.90 | 12.00 | 12.00 | 12.30 | 12.70 | 13.20 | 13.60 |
+
+***
+
+**Notes:**
+
+* This table represents estimates of the market size for various IT solutions, including IoT, security, and networking.
+* Values are in USD millions.
+* The data is sourced from reputable market research firms and industry reports.
+
+**Disclaimer:**
+
+* This information is provided for general knowledge purposes only and should not be considered as investment advice.
+* Market size estimates can vary depending on the source and methodology used.
+*
 
-We are a community run groups of enthusiasts running a first hybrid event.
-You may join any session in person, or virtually through our live stream or gen AI powered VR app.
 
-To accommodate our global audience, we'll have mix of live-streamed sessions from our global community, that you can view in the Lounge.
 
-Supported tags: Keynote, GenAI, Android, Cloud, Firebase, Moonshots, Security, Web, Collaboration
 
-Here are our **40** sessions (each one takes 30 minutes):
-
-## Welcome to the Future of Innovation
-Time: 9:00
-Location: Amphitheater
-Abstract:
-
-This year's Friendly Conf is all about pushing boundaries and unlocking new possibilities. We'll delve into the **transformative** power of generative AI, explore the evolving landscapes of web and mobile experiences, and unveil groundbreaking advancements in cloud technology.
-
-## The Next Generation of Mobile Apps
-Tags: GenAI, Android, Firebase
-Time: 10:00
-Location: Amphitheater
-Abstract:
-
-Dive deep into technical aspects of building and deploying generative AI models using Google's tools and platforms.
-
-This session will showcase how developers can leverage generative AI to enhance Android app experiences. We'll explore integrating tools like Vertex AI to build intelligent features, Remote Config to personalize user interactions, and Crashlytics to streamline development workflows. 
-
-Explore creative applications of generative AI across apps from various domains like art, music, design, and storytelling. 
-
-## Building for the Cloud: Scalability and Security 
-Tags: Cloud, Security
-Time: 10:30
-Location: Amphitheater
-Abstract:
-
-Discover the latest advancements in Google Cloud technologies designed to empower businesses of all sizes. Learn about scalable infrastructure solutions, robust security measures, and efficient data management tools to optimize your cloud environment.
-
-## Exploring the Potential of Quantum Computing 
-Tags: Cloud, Moonshots
-Time: 11:00
-Location: Amphitheater
-Abstract:
-
-Delve into the fascinating world of quantum computing and its potential to revolutionize various industries. This session will introduce the basics of quantum computing, explore current research and applications, and discuss how Google Cloud is making quantum technology accessible. 
-
-## The Power of Personalization: Tailoring Apps to Individual Users
-Tags: Firebase, GenAI, Web
-Time: 11:30
-Location: Amphitheater
-Abstract: 
-
-This session will explore the synergy between Firebase and Generative AI in crafting hyper-personalized app experiences. Learn how to leverage user data and AI-driven insights to tailor content, recommendations, and interactions to individual preferences, enhancing user engagement and satisfaction. 
-
-## Responsible AI: Building Ethical and Inclusive Technology
-Tags: GenAI, Collaboration
-Time: 12:00
-Location: Amphitheater
-Abstract:
-
-Explore the ethical considerations surrounding generative AI. This session will delve into strategies for mitigating bias, ensuring fairness, and promoting inclusivity in AI-powered applications. Learn how to build responsible AI systems that benefit all users.
-
-## Supercharging Productivity with Smart Canvas 
-Tags: Cloud, Collaboration
-Time: 12:30 
-Location: Amphitheater
-Abstract: 
-
-Discover the latest innovations within Google Workspace, with a focus on Smart Canvas. Learn how this collaborative platform can streamline workflows, enhance communication, and boost team productivity through integrated tools and AI-powered features. 
-
-
-## The Future of Gaming: Immersive Experiences and Cloud Integration 
-Tags: Cloud, Android, Moonshots
-Time: 14:00
-Location: Amphitheater 
-Abstract: 
-
-Explore the evolving landscape of gaming, with a focus on cloud-based gaming platforms and immersive technologies like virtual and augmented reality. Learn how Google Cloud is empowering game developers to create next-generation gaming experiences.
-
-## Building Inclusive Design Experiences
-Tags: Android, Web, Collaboration
-Time: 14:30
-Location: Amphitheater
-Abstract:
-
-This session will delve into the principles of inclusive design and explore strategies for creating accessible and user-friendly experiences for everyone. Learn how to incorporate diverse perspectives into your design process and leverage tools to ensure your applications cater to users with varying abilities.
-
-## Unlocking Creativity with Generative AI Tools
-Tags: GenAI
-Time: 15:00
-Location: Amphitheater
-Abstract:
-
-This session offers a hands-on experience with Google's generative AI tools. Participants will learn how to use these tools to generate art, music, and text, exploring the creative potential of AI.
-
-## Machine Learning for Everyone: Building Intelligent Apps with No-Code Solutions
-Tags: GenAI, Cloud
-Time: 15:30
-Location: Amphitheater
-Abstract:
-
-This session will introduce no-code machine learning tools on Google Cloud, empowering individuals with limited coding experience to build intelligent applications. Learn how to leverage pre-trained models and intuitive interfaces to incorporate machine learning into your projects.
-
-## Building for a Sustainable Future with Google Earth Engine
-Tags: Cloud, Moonshots
-Time: 16:00
-Location: Amphitheater
-Abstract:
-
-This session explores the capabilities of Google Earth Engine, a platform for environmental analysis and monitoring. Learn how this platform can be used to track deforestation, monitor climate change, and promote sustainable land management practices.
-
-## The Power of Community: Connecting with Developers Worldwide
-Tags: Collaboration
-Time: 16:30
-Location: Amphitheater
-Abstract:
-
-This session highlights the importance of community building within the developer ecosystem. Learn about Google's developer communities, events, and resources designed to connect developers and foster collaboration.
-
-## Flutter: Building Beautiful Cross-Platform Apps
-Tags: Android, Web
-Time: 17:00
-Location: Amphitheater
-Abstract:
-
-This session provides an introduction to Flutter, Google's UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase. Learn about Flutter's capabilities and explore how it can streamline your development process.
-
-## Android Development: Latest Tools and Technologies
-Tags: Android
-Time: 10:00
-Location: Poolside terrace
-Abstract:
-
-Stay ahead of the curve with the latest advancements in Android development. This session will showcase new tools, libraries, and frameworks designed to streamline app development processes and enhance app functionality. 
-
-## Creating Secure and Reliable Cloud Infrastructure
-Tags: Cloud, Security
-Time: 11:00
-Location: Poolside terrace
-Abstract:
-
-Explore best practices for building secure and reliable cloud infrastructure on Google Cloud Platform. This session will cover topics such as network security, data encryption, disaster recovery, and compliance, ensuring your applications and data are protected.
-
-## The Future of Search: AI-Powered Discovery
-Tags: GenAI, Web
-Time: 12:00
-Location: Poolside terrace
-Abstract:
-
-Explore the evolution of search with generative AI. Learn how AI is transforming the way users discover information, with advancements in natural language processing and personalized search experiences. 
-
-## Building for a Multi-Device World
-Tags: Android, Firebase
-Time: 13:00
-Location: Poolside terrace
-Abstract:
-
-This session explores strategies for developing seamless experiences across multiple devices, from smartphones and tablets to wearables and smart home devices. Learn how Firebase can facilitate cross-device synchronization and data management, enabling a consistent user experience. 
-
-## Unlocking Business Insights with BigQuery 
-Tags: Cloud
-Time: 15:00
-Location: Poolside terrace
-Abstract: 
-
-Learn how to leverage the power of BigQuery, Google Cloud's serverless data warehouse, to analyze vast datasets and extract valuable business insights. This session will cover data warehousing best practices, advanced analytics techniques, and data visualization tools. 
-
-## The Art of Storytelling with Generative AI
-Tags: GenAI
-Time: 16:00
-Location: Poolside terrace
-Abstract:
-
-Explore the creative potential of generative AI in storytelling. This session will showcase how AI can be used to generate narratives, characters, and even entire fictional worlds, opening up new possibilities for writers, filmmakers, and game developers.
-
-## Firebase Crashlytics: Ensuring App Stability and Performance
-Tags: Firebase
-Time: 17:00
-Location: Poolside terrace
-Abstract: 
-
-Dive deep into the capabilities of Firebase Crashlytics, a powerful tool for monitoring app stability and performance. Learn how to effectively identify and diagnose crashes, track key performance metrics, and improve overall app quality.
-
-## Revolutionizing Healthcare with AI
-Tags: GenAI, Cloud, Moonshots
-Time: 18:00
-Location: Poolside terrace
-Abstract: 
-
-Explore how AI and cloud computing are transforming the healthcare industry. This session will showcase real-world examples of AI-powered solutions for medical diagnosis, drug discovery, personalized medicine, and improving patient care. 
-
-## Building Immersive Experiences with ARCore
-Tags: Android, Moonshots
-Time: 19:00 
-Location: Lounge
-Abstract:
-
-Discover the capabilities of ARCore, Google's platform for building augmented reality experiences. Learn how to integrate AR elements into your Android apps, creating engaging and interactive experiences for users. 
-
-## Sustainability in the Cloud: Building a Greener Future
-Tags: Cloud, Collaboration
-Time: 20:00
-Location: Lounge
-Abstract:
-
-Explore Google Cloud's commitment to sustainability and learn about tools and strategies for building environmentally responsible cloud applications. This session will cover topics such as energy efficiency, carbon footprint reduction, and sustainable infrastructure solutions. 
-
-## The Future of Work: Collaboration and Productivity in the Digital Age
-Tags: Cloud, Collaboration
-Time: 21:00
-Location: Lounge
-Abstract:
-
-Explore how Google Workspace is shaping the future of work by fostering collaboration, enhancing productivity, and enabling remote work capabilities. This session will showcase new features and tools designed to empower teams and streamline workflows.
-
-## Investing in the Next Generation of Developers
-Tags: Collaboration, Moonshots
-Time: 22:00
-Location: Lounge
-Abstract: 
-
-Learn about Google's initiatives in supporting and nurturing the next generation of developers. This session will highlight educational programs, scholarships, and resources designed to equip aspiring developers with the skills and knowledge needed to succeed in the tech industry.
-
-## Securing the Internet of Things (IoT)
-Tags: Cloud, Security
-Time: 23:00
-Location: Lounge
-Abstract:
-
-This session focuses on the security challenges associated with the Internet of Things (IoT) and explores solutions for building secure IoT systems on Google Cloud. Learn about best practices for device security, data encryption, and access control.
-
-## The Future of Retail: AI-Powered Personalization and Omnichannel Experiences
-Tags: Cloud, GenAI
-Time: 0:00
-Location: Lounge 
-Abstract: 
-
-Explore how AI and cloud computing are transforming the retail industry. This session will showcase solutions for personalized recommendations, omnichannel shopping experiences, and AI-powered inventory management.
-
-## Democratizing AI: Making AI Accessible to Everyone
-Tags: GenAI, Collaboration
-Time: 1:00
-Location: Lounge 
-Abstract:
-
-This session discusses the importance of making AI accessible to everyone, regardless of their technical background. Learn about initiatives and resources that promote AI education and empower individuals to explore the potential of AI.
-
-## Building the Metaverse: A Collaborative Effort
-Tags: Cloud, Moonshots, Collaboration
-Time: 2:00
-Location: Lounge
-Abstract: 
-
-Explore the concept of the Metaverse and its potential to revolutionize how we interact with the digital world. This session will discuss the role of cloud technology and collaborative platforms in building immersive and interconnected virtual environments.
-
-## The Future of Transportation: Autonomous Vehicles and Smart Cities
-Tags: Cloud, Moonshots, Android
-Time: 3:00
-Location: Lounge
-Abstract: 
-
-Delve into the future of transportation with a focus on autonomous vehicles and smart city initiatives. Learn how Google Cloud and Android are powering advancements in self-driving cars, traffic management, and urban planning.
-
-## Empowering Creativity with AI-powered Tools
-Tags: GenAI, Collaboration
-Time: 4:00
-Location: Lounge 
-Abstract: 
-
-This session showcases a range of AI-powered tools designed to enhance creativity across various domains. Explore applications for generating art, composing music, designing graphics, and more. 
-
-## Building Resilient Applications with Chaos Engineering
-Tags: Cloud
-Time: 5:00
-Location: Lounge
-Abstract: 
-
-Learn about the principles of chaos engineering and how it can be used to build more resilient and reliable cloud applications. This session will explore tools and techniques for proactively identifying and mitigating potential failures.
-
-## The Quantum Revolution: Advancements and Opportunities 
-Tags: Cloud, Moonshots
-Time: 6:00
-Location: Lounge
-Abstract: 
-
-Dive deeper into the world of quantum computing with a focus on recent advancements and emerging opportunities. This session will explore how quantum technology is poised to revolutionize fields like medicine, materials science, and artificial intelligence.
-
-## Android Security: Protecting User Data and Privacy
-Tags: Android, Security
-Time: 7:00
-Location: Lounge
-Abstract: 
-
-Explore best practices for building secure Android applications. This session will cover topics such as secure coding techniques, data encryption, user authentication, and privacy-preserving features.
-
-## Scaling your Business with Google Cloud AI Solutions
-Tags: Cloud, GenAI
-Time: 8:00
-Location: Lounge
-Abstract: 
-
-Learn how to leverage Google Cloud AI solutions to scale your business operations and gain a competitive edge. This session will explore AI-powered tools for customer service automation, personalized marketing, and predictive analytics.
 `;
