@@ -27,6 +27,7 @@ import {
   doc,
   addDoc,
   deleteDoc,
+  
 } from "firebase/firestore";
 import ChatContainer from "@/components/chat-container";
 import { FirebaseUserContext } from "@/lib/firebase-user";
@@ -36,6 +37,7 @@ import {
   MessageData,
   prepareMessage,
 } from "@/lib/message";
+
 
 /**
  * A portal page with an ai chat.
@@ -89,7 +91,6 @@ const ChatPage = () => {
     // Send a message to Gemini Extension.
     const newMessageRef = await addDoc(messagesCollection, {
       // TODO: 1. Replace code next line with this:
-      // prompt: preparePrompt(userMsg, messages),
       prompt: preparePrompt(userMsg, messages),
     });
     console.log("New message added with ID: ", newMessageRef.id);
