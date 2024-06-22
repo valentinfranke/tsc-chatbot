@@ -3,7 +3,10 @@
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
   },
-  "extensions": {},
+  "extensions": {
+    "firestore-genai-chatbot": "googlecloud/firestore-genai-chatbot@0.0.10",
+    "firestore-multimodal-genai": "googlecloud/firestore-multimodal-genai@1.0.0"
+  },
   "storage": {
     "rules": "storage.rules"
   },
